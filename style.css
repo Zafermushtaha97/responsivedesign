@@ -1,0 +1,168 @@
+body{
+    height: 3000px;
+}
+
+.butmar{
+    margin-right: 20px;
+
+}
+.navfixed{
+    position: static;
+    
+}
+
+.jumbotron{
+    background-color: cadetblue;
+    color: wheat;
+    margin-bottom: 0px;
+}
+
+#products{
+    background-color:gainsboro;
+    padding: 30px;
+  
+}
+
+.container img{
+    height: 350px;
+}
+
+.padding{
+    padding-top: 40px;
+}
+
+.colpad{
+    padding: 15px;
+}
+ul li{
+    list-style-type: none;
+}
+.border{
+    width: 250px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.centertext{
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 45px;
+    color: #9C6E4E;
+    font-size: 18px;
+}
+.margintop{
+    margin-top: 95px;
+   
+}
+.service img:hover{
+    border-radius: 25%;
+}
+.service img{
+    box-shadow: 10px 10px 10px blanchedalmond;
+}
+.container .colorprice{
+    color: #BF852A;
+}
+
+#price{
+    background-color:#ECD2AA;
+   
+    margin-top: 45px;
+    padding-top: 20px;
+    margin-bottom: -60px;
+}
+#business{
+    background-color: #030524;
+    padding-bottom: 50px;
+    
+}
+.textbusi{
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 60px;
+    margin-top: 60px;
+    color: white;
+    font-size: 18px;
+
+}
+
+.colmar{
+    margin-bottom: 50px;
+}
+
+.paddingcard{
+    padding-bottom: 45px;
+}
+.paddtop{
+    padding-top: 30px;
+}
+
+.centerelement{
+    text-align: center;
+    color: aquamarine;
+
+}
+.centerbutton{
+    text-align: center;
+}
+.centerelement:hover{
+    color:#051650;
+}
+#contact{
+    background-color: #B1B1B1;
+    padding-top: 25px;
+    margin-top: 60px;
+    padding-bottom: 40px;
+
+    
+}
+
+.mylist li{
+    color: #020207;
+    font-size: 22px;
+}
+#last{
+    background-color: black;
+    padding-top: 50px;
+  
+    font-size: 18px;
+    color: whitesmoke;
+
+}
+
+.paddleft{
+    padding-left: 0px;
+
+}
+#footer{
+    background-color: #ecf0f1;
+}
+#team{
+    padding-top: 50px;
+}
+#team img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px blanchedalmond;
+}
+.marginleftimg{
+    margin-left: 50px;
+    margin-top: 15px;
+} 
+
+.fontbold{
+    font-weight: bold;
+}
+#team img:hover{
+    transform: scale(.75);
+    
+}
+#scrollup{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    padding: 10px;
+    background-color:bisque;
+}
