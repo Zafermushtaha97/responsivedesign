@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/fontawesome.css">
     <linl rel="stylesheet" href ="static/css/all.css">
+    <link  rel="stylesheet" href="static/css/animate.min.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
@@ -70,11 +71,11 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-2">lorem ipsum</h1>
-                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also occupies the entire
-                    horizontal space of its parent.</p>
+                <h1 class="display-3">WELCOME TO GLINT</h1>
+                <p class="lead">Glint has been honored to partner up with these clients
+                             We are a creative group  of people who design influential brands and
+                             digital experiences We’ve got everything you need to launch and grow your business
+                </p>
             </div>
         </div>
     </section>
@@ -179,7 +180,7 @@
 
         <div class="container    service">
             <div class="row">
-                <div class="col col-md-6 col-sm-12">
+                <div class="col col-md-6 col-sm-12  wow  fadeInLeft">
                     <img src="static/img/img7.jpg">
                     <div class="underimg">
                         <h2>Lorem Ipsum</h2>
@@ -188,7 +189,7 @@
                     </div>
 
                 </div>
-                <div class="col col-md-6 col-sm-12">
+                <div class="col col-md-6 col-sm-12  wow  fadeInRight">
                     <img src="static/img/img8.jpeg">
                     <div class="underimg">
                         <h2>Lorem Ipsum</h2>
@@ -198,14 +199,14 @@
             </div>
             <br>
             <div class="row">
-                <div class="col  col-md-6 col-sm-12">
+                <div class="col  col-md-6 col-sm-12   wow  fadeInLeft">
                     <img src="static/img/img9.jpeg">
                     <div class="underimg">
                         <h2>Lorem Ipsum</h2>
                         <p>standard dummy text ever since the 1500s, when an unknown printer took</p>
                     </div>
                 </div>
-                <div class="col col-md-6 col-sm-12">
+                <div class="col col-md-6 col-sm-12   wow  fadeInRight">
                     <img src="static/img/img10.jpeg">
                     <div class="underimg">
                         <h2>Lorem Ipsum</h2>
@@ -379,7 +380,7 @@
     <section id="team">
         <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 col-md-12">
+                    <div class="col-sm-12 col-lg-3 col-md-12 wow rollIn">
                             <img src="static/img/person1.jpeg" alt="jamis" class="img-thumbnail">
                             <ul class="marginleftimg">
                                 <li class="fontbold">jamis</li>
@@ -387,7 +388,7 @@
                                 <li>Software Enginering</li>
                             </ul>
                     </div>
-                    <div class="col-sm-12 col-lg-3 col-md-12">
+                    <div class="col-sm-12 col-lg-3 col-md-12 wow bounceInDown center">
                             <img src="static/img/person4.jpeg" alt="girl" class="img-thumbnail">
                             <ul class="marginleftimg">
                                     <li class="fontbold">jamis</li>
@@ -395,7 +396,7 @@
                                     <li>react js developer</li>
                                 </ul>
                     </div>
-                    <div class="col-sm-12 col-lg-3 col-md-12">
+                    <div class="col-sm-12 col-lg-3 col-md-12  wow bounceInRight"">
                             <img src="static/img/person2.png" alt="programmer" class="img-thumbnail">
                             <ul class="marginleftimg">
                                     <li class="fontbold">jamis</li>
@@ -403,7 +404,7 @@
                                     <li>Web Developer</li>
                                 </ul>
                     </div>
-                    <div class="col-sm-12 col-lg-3 col-md-12">
+                    <div class="col-sm-12 col-lg-3 col-md-12 wow bounceInUp center">
                             <img src="static/img/person.jpeg" alt="engineer" class="img-thumbnail">
                             <ul class="marginleftimg">
                                     <li class="fontbold">jamis</li>
@@ -659,74 +660,18 @@
     <script src="static/js/bootstrap.js"></script>
     <script src="static/js/fontawesome.js"></script>
     <script src="static/js/all.js"></script>
+
+<script src="static/js/wow.min.js"></script>
 <script>
-
-var sections = $('section')
-, nav = $('nav')
-, nav_height = nav.outerHeight();
-
-$(window).on('scroll', function () {
-var cur_pos = $(this).scrollTop();
-
-sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
-
-    if (cur_pos >= top && cur_pos <= bottom) {
-    nav.find('a').removeClass('active');
-    sections.removeClass('active');
-
-    $(this).addClass('active');
-    nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-    }
-});
-});
+new WOW().init();
+</script>
 
 
-    </script> 
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
 
-    if (this.hash !== "") {
-
-      event.preventDefault();
-
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1200, function(){
-
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-<script>
-
-    window.onscroll = function(){
-      scrollFunction();
-    };
-    function scrollFunction(){
-      if(document.body.scrollTop > 100 || document.documentElement.scrollTop>100){
-        document.getElementById("scrollup").style.display = "block";
-
-      }else{
-        document.getElementById("scrollup").style.display = "none";
-      }
-    }
-
-    function toUp(){
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop=0;
-    }
-    </script>
 
 
 </body>
